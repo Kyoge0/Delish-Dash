@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fc;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #e0e0e0;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.logo h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.logo span {
+    color: #5DB074;
+}
+
+.menu {
+    margin-top: 40px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    color: #555;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.menu a.active, .menu a:hover {
+    background-color: #f1f5f9;
+    color: #333;
+}
+
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.top-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 18px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.profile {
+    margin-right: 10px;
+    color: #333;
+}
+
+.profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.platillos-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.platillos-list {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.platillos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-platillo {
+    background-color: #5DB074;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.platillos-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.platillos-table th, .platillos-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.platillos-table th {
+    background-color: #f7f8fa;
+    color: #333;
+    font-weight: bold;
+}
+
+.platillos-table td {
+    color: #555;
+}
+
+.delete-btn {
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}

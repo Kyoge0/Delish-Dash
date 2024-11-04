@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delish Dash - Dashboard</title>
+    <link rel="stylesheet" href="CSS/SADashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Delish <span>Dash.</span></h2>
+            </div>
+            <nav class="menu">
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">Usuarios</a>
+                <a href="#">Tiendas</a>
+                <a href="#">Promociones</a>
+                <a href="#">Satisfacción del cliente</a>
+                <a href="#">Reviews</a>
+                <a href="#">Food Detail</a>
+                <a href="#">Calendar</a>
+                <a href="#">Chat</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-nav">
+                <input type="text" placeholder="Search here" class="search-bar">
+                <div class="top-icons">
+                    <span class="icon">🔒</span>
+                    <span class="icon">🔔</span>
+                    <span class="icon">🛒</span>
+                    <span class="icon">❤️</span>
+                    <span class="profile">Hola, Alejandra</span>
+                    <img src="profile-pic.jpg" alt="Perfil" class="profile-pic">
+                </div>
+            </header>
+ 
+            <section class="dashboard-content">
+                <h2>Dashboard</h2>
+                
+                <div class="summary-widgets">
+                    <div class="widget">
+                        <h3>75</h3>
+                        <p>Órdenes totales</p>
+                    </div>
+                    <div class="widget">
+                        <h3>357</h3>
+                        <p>Entregados</p>
+                    </div>
+                    <div class="widget">
+                        <h3>65</h3>
+                        <p>Total de cancelados</p>
+                    </div>
+                    <div class="widget">
+                        <h3>$128</h3>
+                        <p>Ingreso total</p>
+                    </div>
+                </div>
+
+                <div class="charts">
+                    <div class="chart large-chart">
+                        <h3>Ingresos totales</h3>
+                        <img src="Images/SADashboard/Grafica.png" style="padding-left: 50px;">
+                        <canvas id="incomeChart" hidden></canvas>
+                    </div>
+                    <div class="chart small-chart">
+                        <h3>Métricas de clientes</h3>
+                        <img src="Images/SADashboard/Metricas.png" style="padding: 20px;">
+                        <canvas id="clientMetricsChart" hidden></canvas>
+                    </div>
+                </div>
+
+                <div class="orders-by-day">
+                    <h3>Órdenes por día</h3>
+                    <img src="Images/SADashboard/Ordenes.png" style="padding: 20px;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                    <button class="save-report">Save Report</button>
+                    <canvas id="ordersByDayChart" hidden></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

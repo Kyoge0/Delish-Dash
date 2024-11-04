@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delish Dash - Platillos Disponibles</title>
+    <link rel="stylesheet" href="CSS/SAShopsMen.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Delish <span>Dash.</span></h2>
+            </div>
+            <nav class="menu">
+                <a href="#">Dashboard</a>
+                <a href="#">Usuarios</a>
+                <a href="#" class="active">Tiendas</a>
+                <a href="#">Promociones</a>
+                <a href="#">Satisfacción del cliente</a>
+                <a href="#">Reviews</a>
+                <a href="#">Food Detail</a>
+                <a href="#">Calendar</a>
+                <a href="#">Chat</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="top-nav">
+                <input type="text" placeholder="Search here" class="search-bar">
+                <div class="top-icons">
+                    <span class="icon">🔒</span>
+                    <span class="icon">🔔</span>
+                    <span class="icon">🛒</span>
+                    <span class="icon">❤️</span>
+                    <span class="profile">Hola, Alejandra</span>
+                    <img src="profile-pic.jpg" alt="Perfil" class="profile-pic">
+                </div>
+            </header>
+            
+
+            <section class="platillos-content">
+                <h2>Platillos disponibles</h2>
+                
+                <div class="platillos-list">
+                    <div class="platillos-header">
+                        <h3>Lista de platillos</h3>
+                        <button class="add-platillo">Añadir platillo</button>
+                    </div>
+                    
+                    <table class="platillos-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Platillo</th>
+                                <th>Ganancia mensual</th>
+                                <th>Ganancia anual</th>
+                                <th>Disponibilidad</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>Caldo de res</td>
+                                <td>$3200</td>
+                                <td>$32000</td>
+                                <td>DISPONIBLE</td>
+                                <td><button class="delete-btn">Eliminar</button></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta de empleados</title>
+    <link rel="stylesheet" href="CSS/SAAltaEmp.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Alta de empleados</h2>
+        <p>Completa la información abajo para dar de alta una cuenta para empleado</p>
+        
+        <!-- Foto de perfil -->
+        <div class="profile-picture">
+            <img src="profile-pic.jpg" alt="Foto de perfil">
+            <div class="edit-icon">✔️</div>
+            <p>Foto de perfil</p>
+            <small>Esta foto aparecerá en el perfil</small>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre(s)</label>
+                <input type="text" id="nombre" placeholder="Nombre(s)">
+            </div>
+            
+            <div class="form-group">
+                <label for="apellido">Apellido(s)</label>
+                <input type="text" id="apellido" placeholder="Apellido(s)">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="Contraseña">
+            </div>
+            
+            <div class="form-group">
+                <label for="confirm-password">Confirmación de la contraseña</label>
+                <input type="password" id="confirm-password" placeholder="Confirmación de la contraseña">
+            </div>
+            
+            <div class="form-group">
+                <label for="local-id">ID del local de trabajo</label>
+                <input type="text" id="local-id" placeholder="ID del local de trabajo">
+            </div>
+            
+            <div class="form-group">
+                <label for="position">Posición</label>
+                <select id="position">
+                    <option>Empleado regular</option>
+                    <option>Manager</option>
+                    <option>Supervisor</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="next-btn">Next</button>
+        </form>
+    </div>
+</body>
+</html>

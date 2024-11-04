@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delish Dash - Usuarios</title>
+    <link rel="stylesheet" href="CSS/SAUsers.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div>
+                <div class="logo">
+                    <h2>Delish <span>Dash.</span></h2>
+                </div>
+                <nav class="menu">
+                    <a href="#">Dashboard</a>
+                    <a href="#" class="active">Usuarios</a>
+                    <a href="#">Tiendas</a>
+                    <a href="#">Promociones</a>
+                    <a href="#">Satisfacción del cliente</a>
+                    <a href="#">Reviews</a>
+                    <a href="#">Food Detail</a>
+                    <a href="#">Calendar</a>
+                    <a href="#">Chat</a>
+                </nav>
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            <header class="top-nav">
+                <input type="text" placeholder="Search here" class="search-bar">
+                <div class="top-icons">
+                    <span class="icon">🔒</span>
+                    <span class="icon">🔔</span>
+                    <span class="icon">🛒</span>
+                    <span class="icon">❤️</span>
+                    <span class="profile">Hola, Alejandra</span>
+                    <img src="profile-pic.jpg" alt="Perfil" class="profile-pic">
+                </div>
+            </header>
+            
+            <section class="usuarios-content">
+                <h2>Usuarios del sistema</h2>
+                
+                <div class="summary-widgets">
+                    <div class="widget">
+                        <h3>35k</h3>
+                        <p>Clientes</p>
+                    </div>
+                    <div class="widget">
+                        <h3>15k</h3>
+                        <p>Empleados</p>
+                    </div>
+                </div>
+                
+                <div class="table-section">
+                    <h3>Cuentas de clientes</h3>
+                    <button class="create-btn">Crear usuario</button>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre(s)</th>
+                                <th>Apellido(s)</th>
+                                <th>Usuario</th>
+                                <th>Correo</th>
+                                <th>Teléfono</th>
+                                <th>Dirección</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>055</td>
+                                <td>Juan</td>
+                                <td>Perez</td>
+                                <td>juanp</td>
+                                <td>juan@example.com</td>
+                                <td>834 123 4567</td>
+                                <td>Av. Las Flores #123</td>
+                                <td>
+                                    <button class="edit-btn">Editar</button>
+                                    <button class="delete-btn">Eliminar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-section">
+                    <h3>Cuentas de empleados</h3>
+                    <button class="create-btn">Crear usuario</button>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre(s)</th>
+                                <th>Apellido(s)</th>
+                                <th>ID del local de trabajo</th>
+                                <th>Nombre del restaurante</th>
+                                <th>Posición</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>056</td>
+                                <td>Alfredo</td>
+                                <td>Enriquez</td>
+                                <td>134</td>
+                                <td>juan@example.com</td>
+                                <td>Manager</td>
+                                <td>
+                                    <button class="edit-btn">Editar</button>
+                                    <button class="delete-btn">Eliminar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delish Dash - Promociones</title>
+    <link rel="stylesheet" href="CSS/SAPromos.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div>
+                <div class="logo">
+                    <h2>Delish <span>Dash.</span></h2>
+                </div>
+                <nav class="menu">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="#">Usuarios</a>
+                    <a href="#">Tiendas</a>
+                    <a href="#" class="active">Promociones</a>
+                    <a href="#">Satisfacción del cliente</a>
+                    <a href="#">Reviews</a>
+                    <a href="#">Food Detail</a>
+                    <a href="#">Calendar</a>
+                    <a href="#">Chat</a>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-nav">
+                <input type="text" placeholder="Buscar aquí" class="search-bar">
+                <div class="top-icons">
+                    <span class="icon">🔒</span>
+                    <span class="icon">🔔</span>
+                    <span class="icon">🛒</span>
+                    <span class="icon">❤️</span>
+                    <span class="profile">Hola, Alejandra</span>
+                    <img src="profile-pic.jpg" alt="Perfil" class="profile-pic">
+                </div>
+            </header>
+            <section class="promotions-content">
+                <h2>Promociones</h2>
+                <p>Crea tu propio código promocional</p>
+
+                <div class="promo-code-form">
+                    <input type="text" placeholder="Escribe el código de promoción" class="promo-input">
+                    <input type="date" placeholder="DD/MM/YY" class="promo-date">
+                    <input type="date" placeholder="DD/MM/YY" class="promo-date">
+                    <button class="btn-create">Crear</button>
+                    <label><input type="checkbox" class="promo-checkbox"> Uso único</label>
+                </div>
+
+                <table class="promo-table">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Fecha de inicio</th>
+                            <th>Expiración de código</th>
+                            <th>Valor de código</th>
+                            <th>Uso único</th>
+                            <th>Cupones vigentes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>FELICESFIESTAS</td>
+                            <td>25/12/2024</td>
+                            <td>01/01/2025</td>
+                            <td>40%</td>
+                            <td>Uso único</td>
+                            <td><button class="btn-edit">Editar</button></td>
+                        </tr>
+                        <tr>
+                            <td>JUEVESPOLLO-231</td>
+                            <td>24/08/2024</td>
+                            <td>24/08/2024</td>
+                            <td>20%</td>
+                            <td>Reutilizable</td>
+                            <td><button class="btn-edit">Editar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

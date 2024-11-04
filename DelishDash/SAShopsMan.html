@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delish Dash - Menú e Inventario</title>
+    <link rel="stylesheet" href="CSS/SAShopsMan.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Delish <span>Dash.</span></h2>
+            </div>
+            <nav class="menu">
+                <a href="#">Dashboard</a>
+                <a href="#">Usuarios</a>
+                <a href="#" class="active">Tiendas</a>
+                <a href="#">Promociones</a>
+                <a href="#">Satisfacción del cliente</a>
+                <a href="#">Reviews</a>
+                <a href="#">Food Detail</a>
+                <a href="#">Calendar</a>
+                <a href="#">Chat</a>
+            </nav>
+        </aside>
+        
+        <main class="main-content">
+            <header class="top-nav">
+                <input type="text" placeholder="Buscar aquí" class="search-bar">
+                <div class="top-icons">
+                    <span class="icon">🔒</span>
+                    <span class="icon">🔔</span>
+                    <span class="icon">🛒</span>
+                    <span class="icon">❤️</span>
+                    <span class="profile">Hola, Alejandra</span>
+                    <img src="profile-pic.jpg" alt="Perfil" class="profile-pic">
+                </div>
+            </header>
+  
+            <section class="dashboard-content">
+                <h2>Menú</h2>
+
+                <div class="menu-section">
+                    <div class="table-header">
+                        <h3>Menú de la tienda</h3>
+                        <button class="btn-add-item">Añadir menú</button>
+                    </div>
+                    <table class="menu-table">
+                        <thead>
+                            <tr>
+                                <th>Menú</th>
+                                <th>Tipo</th>
+                                <th>Precio</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Caldito de pollo</td>
+                                <td>Carne</td>
+                                <td>$134</td>
+                                <td>
+                                    <button class="btn-edit">Editar</button>
+                                    <button class="btn-delete">Eliminar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="menu-section">
+                    <div class="table-header">
+                        <h3>Inventario</h3>
+                        <button class="btn-add-item">Añadir inventario</button>
+                    </div>
+                    <table class="inventory-table">
+                        <thead>
+                            <tr>
+                                <th>Ingredientes</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                                <th>Menú</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Carne de res</td>
+                                <td>30 / 200</td>
+                                <td>$134</td>
+                                <td>#001</td>
+                                <td>
+                                    <button class="btn-edit">Editar</button>
+                                    <button class="btn-delete">Eliminar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Códigos Válidos -->
+                <div class="menu-section">
+                    <h3>Códigos válidos</h3>
+                    <table class="codes-table">
+                        <thead>
+                            <tr>
+                                <th>Códigos válidos</th>
+                                <th>Promoción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>KAWAFEST</td>
+                                <td>70%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delish Dash - Tiendas Manejadas</title>
+    <link rel="stylesheet" href="CSS/SAShops.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div>
+                <div class="logo">
+                    <h2>Delish <span>Dash.</span></h2>
+                </div>
+                <nav class="menu">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="#">Usuarios</a>
+                    <a href="#" class="active">Tiendas</a>
+                    <a href="#">Promociones</a>
+                    <a href="#">Satisfacción del cliente</a>
+                    <a href="#">Reviews</a>
+                    <a href="#">Food Detail</a>
+                    <a href="#">Calendar</a>
+                    <a href="#">Chat</a>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-nav">
+                <input type="text" placeholder="Buscar aquí" class="search-bar">
+                <div class="top-icons">
+                    <span class="icon">🔒</span>
+                    <span class="icon">🔔</span>
+                    <span class="icon">🛒</span>
+                    <span class="icon">❤️</span>
+                    <span class="profile">Hola, Alejandra</span>
+                    <img src="profile-pic.jpg" alt="Perfil" class="profile-pic">
+                </div>
+            </header>
+
+            <section class="stores-content">
+                <h2>Tiendas manejadas</h2>
+                <input type="text" placeholder="Escriba el nombre de la tienda o busque en la lista" class="store-search-bar">
+
+                <div class="store-list">
+                    <div class="table-header">
+                        <h3>Lista de tiendas manejadas</h3>
+                        <button class="btn-add-store">Añadir tienda</button>
+                    </div>
+                    <table class="store-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Dirección</th>
+                                <th>Teléfono</th>
+                                <th>Gerente encargado</th>
+                                <th>Ingresos mens.</th>
+                                <th>Estado de la tienda</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>056</td>
+                                <td>Juan Perez</td>
+                                <td>Av. Patito Luis Flores</td>
+                                <td>834 159 6790</td>
+                                <td># 48291</td>
+                                <td>$30,000</td>
+                                <td class="status-active">ACTIVO</td>
+                                <td>
+                                    <button class="btn-edit">Editar</button>
+                                    <button class="btn-delete">Eliminar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
